@@ -90,7 +90,8 @@ export async function action({ request }) {
   }
 
   if (appointmentDate.trim() === "") {
-    errors.appointmentDate = "Vui lòng nhập ngày khám!";
+    errors.appointmentDate =
+      "Vui lòng nhập ngày khám và đúng định dạng ngày/tháng/năm!";
   }
 
   if (session.trim() === "") {

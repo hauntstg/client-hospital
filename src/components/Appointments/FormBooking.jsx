@@ -172,7 +172,17 @@ export default function FormBooking({ error }) {
             selected={form.appointmentDate}
             onChange={(date) =>
               setForm((f) => ({ ...f, appointmentDate: date ?? null }))
-            } // cập nhật state
+            }
+            onChangeRaw={(e) => {
+              const value = e.target.value;
+              const [day, month, year] = value.split("/");
+              if (day && month && year) {
+                const parsed = new Date(`${year}-${month}-${day}`);
+                if (!isNaN(parsed)) {
+                  setForm((f) => ({ ...f, appointmentDate: parsed }));
+                }
+              }
+            }}
             placeholderText="Ngày khám"
             dateFormat="dd/MM/yyyy"
             className="form-control"
