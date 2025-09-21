@@ -1,0 +1,105 @@
+.item-booking {
+  margin: 30px 20px;
+}
+
+/* item booking title */
+.item-booking .item-booking-title {
+  display: flex;
+  justify-content: space-between;
+}
+
+.item-booking .item-booking-title .item-booking-title-left h3 {
+  font-weight: 900;
+  color: #27519e;
+}
+
+.item-booking .item-booking-title .item-booking-title-left p {
+  color: #27519e;
+}
+
+.item-booking .item-booking-title .item-booking-title-right {
+  display: flex;
+  width: 40px;
+}
+
+.item-booking .item-booking-title .item-booking-title-right .custom-btn-close {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #27519e;
+  color: white;
+  font-weight: 700;
+  height: 60%;
+  width: 100%;
+}
+
+/* main form */
+.item-booking .main-form > div {
+  /* padding: 10px; */
+}
+
+.item-booking .main-form input,
+.item-booking .main-form select,
+.item-booking .main-form textarea {
+  width: 100%;
+  height: 40px;
+  border: 1px solid grey;
+  border-radius: 3px;
+  padding-left: 20px;
+  font-size: 12px;
+  color: black;
+}
+
+.item-booking .main-form textarea {
+  height: 80px;
+  padding-top: 10px;
+}
+
+.item-booking .main-form input:focus,
+.item-booking .main-form select:focus,
+.item-booking .main-form textarea:focus {
+  outline: none;
+}
+
+.item-booking .main-form input::placeholder,
+.item-booking .main-form textarea::placeholder,
+.react-datepicker-wrapper input {
+  font-size: 12px;
+  color: black;
+}
+
+.select-sex,
+.select-ck,
+.select-session {
+  font-size: 12px;
+  color: black;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+.react-datepicker-wrapper {
+  width: 100%;
+}
+
+/* wrap btn */
+.item-booking .main-form .wrap-btn {
+  display: flex;
+  justify-content: end;
+}
+
+.item-booking .main-form .wrap-btn .btn-send-form {
+  background-color: #6bc0e7;
+  color: white;
+  font-weight: 700;
+  border-radius: 25px;
+  border: 0;
+  padding: 10px 80px;
+}
+
+.error-form {
+  color: red;
+  font-style: italic;
+  font-size: 12px;
+  height: 12px;
+}

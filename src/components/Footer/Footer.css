@@ -1,0 +1,75 @@
+.custom-footer {
+  background: linear-gradient(rgba(2, 79, 161, 0.9)),
+    url("../images/footer-1.jpg");
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  height: 120px;
+}
+
+.custom-footer {
+  display: flex;
+  justify-content: space-around;
+}
+
+.custom-footer .footer-left {
+  display: flex;
+  gap: 20px;
+  color: white;
+}
+.custom-footer .footer-left .footer-left-message {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 !important;
+}
+
+.custom-footer .footer-left .footer-left-message:first-child {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.footer-right {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  color: white;
+}
+
+.footer-right .footer-right-input input {
+  transition: all 0.3s ease-in-out;
+  border: 1px solid transparent;
+  border-radius: 25px;
+  border-radius: 19px;
+  background: hsla(0, 0%, 100%, 0.25);
+  padding-right: 1.25rem;
+  padding-left: 1.25rem;
+  width: 100%;
+  width: 430px;
+  height: 40px;
+  color: #fff;
+  font-size: 0.875rem;
+  font-weight: 400;
+}
+
+.footer-right .footer-right-input input:focus {
+  outline: none;
+}
+
+.footer-right .footer-right-input input::placeholder {
+  color: #fff;
+  font-size: 0.875rem;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.footer-right-btn {
+  background-color: #6bc0e7;
+  color: white;
+  border-radius: 25px;
+  border: 0;
+  padding: 10px 40px;
+  cursor: pointer;
+}

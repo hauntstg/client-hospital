@@ -1,0 +1,130 @@
+.wrapProductList {
+  padding: 20px;
+}
+
+.contentProductList {
+  background-color: white;
+  padding: 0 20px !important;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.header {
+  font-size: 20px;
+  font-weight: 500;
+  padding: 20px 0;
+}
+
+.header input {
+  height: 50px;
+  width: 500px;
+  padding-left: 5px;
+}
+
+.table thead {
+  height: 60px;
+}
+
+.table tbody th {
+  font-weight: 400;
+  height: 80px;
+  vertical-align: middle;
+  color: var(--color-gray-600);
+}
+
+.table tbody tr:nth-child(odd) {
+  background-color: #f5f7fa !important;
+}
+
+.table .img {
+  text-align: center;
+}
+
+.table .img img {
+  height: 100%;
+}
+
+.table tbody .btnUpdate,
+.table tbody .btnDelete {
+  border: 0;
+  color: white;
+  background-color: #28a745;
+  padding: 5px 10px;
+}
+
+.table tbody .btnDelete {
+  background-color: crimson;
+  margin-left: 10px;
+}
+
+.pagination {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  padding-right: 50px;
+  padding-bottom: 20px;
+}
+
+.pagination i {
+  padding-left: 30px;
+  color: #8a8585;
+  cursor: pointer;
+}
+
+.disabled {
+  opacity: 0.5;
+  pointer-events: none;
+}
+
+.confirmBoxWrap {
+  position: fixed;
+  border: 0px;
+  border: 2px solid #c3c3c3;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  height: 200px !important;
+  width: 500px !important;
+  margin: 0 !important;
+}
+
+.confirmBox {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 0;
+}
+
+.confirmBox .message {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 !important;
+}
+
+.confirmBox .confirmButton {
+  text-align: center;
+}
+
+.acceptButton,
+.closeButton {
+  border: 0;
+  color: white;
+  background-color: #04aa6d;
+  padding: 10px;
+  opacity: 0.8;
+}
+
+.closeButton {
+  background-color: blue;
+}
+
+.acceptButton:hover,
+.closeButton:hover {
+  opacity: 1;
+}
+
+dialog::backdrop {
+  background: rgba(0, 0, 0, 0.5);
+}

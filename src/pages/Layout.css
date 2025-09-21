@@ -1,0 +1,27 @@
+.islogged {
+  display: flex;
+  justify-content: end;
+  font-style: italic;
+  font-family: sans-serif;
+  height: 30px;
+  background: white;
+}
+
+.islogged .islogged-email {
+  line-height: 30px;
+}
+
+.islogged .btn-logout {
+  border: 0;
+  font-style: italic;
+  background-color: transparent;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 120px;
+  z-index: 1;
+}
