@@ -70,7 +70,7 @@ export async function action({ request }) {
     notes,
   } = payload;
 
-  console.log(dob);
+  console.log("apppointmentDate: " + appointmentDate);
 
   const errors = {};
 
